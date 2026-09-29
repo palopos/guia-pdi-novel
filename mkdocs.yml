@@ -1,0 +1,86 @@
+site_name: Primeros trámites UCA
+site_description: >-
+  Guía de acogida para el profesorado novel de la Universidad de Cádiz:
+  VPN, actas, Portafirmas, SIRE, Portal de Servicios y documentación acreditativa.
+site_author: Proyecto ACTÚA 2025/2026 · Universidad de Cádiz
+
+# Cambiar por la URL definitiva antes de publicar.
+# GitHub Pages:  https://palopos.github.io/guia-pdi-novel/ (activo)
+# Servidor UCA:  https://<centro>.uca.es/<ruta>/
+site_url: https://palopos.github.io/guia-pdi-novel/
+
+copyright: >-
+  Elaborado en el marco del proyecto «Mentoría docente y producción audiovisual
+  para profesorado novel en la Universidad de Cádiz», avalado por la convocatoria
+  ACTÚA de Actuaciones Avaladas para la Mejora Docente del curso 2025/2026.
+
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Cambiar a modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Cambiar a modo claro
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
+
+nav:
+  - Portada: index.md
+  - VPN de la UCA: vpn.md
+  - Gestión de actas: actas.md
+  - Portafirmas: portafirmas.md
+  - SIRE · reserva de espacios: sire.md
+  - Portal de Servicios: portal-servicios.md
+  - Documentación acreditativa: documentacion.md
+  - Quinquenios: quinquenios.md
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      title: En esta página
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search:
+      lang: es
+
+extra:
+  social:
+    - icon: fontawesome/solid/envelope
+      link: mailto:innovacion.docente@uca.es
+      name: Unidad de Formación e Innovación Docente

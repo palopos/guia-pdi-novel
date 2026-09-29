@@ -1,0 +1,71 @@
+/* Paleta de la guía: azul marino y ocre, sobre neutros con ligero sesgo frío.
+   Ajusta aquí si el centro tiene una identidad visual propia. */
+
+:root {
+  --md-primary-fg-color:        #10365c;
+  --md-primary-fg-color--light: #1d5285;
+  --md-primary-fg-color--dark:  #0d2540;
+  --md-primary-bg-color:        #ffffff;
+  --md-primary-bg-color--light: #c8d8e6;
+
+  --md-accent-fg-color:         #a86f14;
+  --md-accent-fg-color--transparent: #a86f141a;
+  --md-accent-bg-color:         #ffffff;
+
+  --guia-albero:                #a86f14;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #0d2540;
+  --md-primary-fg-color--light: #8dbce9;
+  --md-primary-fg-color--dark:  #081a2e;
+
+  --md-accent-fg-color:         #dfae5d;
+  --md-accent-fg-color--transparent: #dfae5d1a;
+
+  --guia-albero:                #dfae5d;
+
+  --md-hue: 215;
+}
+
+/* Tipografía: misma pareja que la versión original de la guía.
+   Las fuentes las sirve Google Fonts a través de la opción font del tema;
+   si prefieres no depender de un servicio externo, elimina este bloque
+   y añade a mkdocs.yml:  theme.font: false */
+:root {
+  --md-text-font: "IBM Plex Sans";
+  --md-code-font: "IBM Plex Mono";
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Numeración de pasos en ocre, como en la guía original */
+.md-typeset ol > li::marker {
+  color: var(--guia-albero);
+  font-weight: 600;
+}
+
+/* Tarjetas de la portada */
+.md-typeset .grid.cards > ul > li {
+  border-radius: 8px;
+}
+.md-typeset .grid.cards > ul > li:hover {
+  border-color: var(--md-primary-fg-color--light);
+}
+
+/* Etiqueta de plataforma sobre el título de cada tarjeta */
+.md-typeset .card-eyebrow {
+  display: block;
+  font-family: var(--md-code-font), monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--guia-albero);
+  margin-bottom: 0.2rem;
+}
