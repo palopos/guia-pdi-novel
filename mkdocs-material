@@ -1,6 +1,6 @@
 # Generador del sitio. Zensical está en desarrollo activo (pre-1.0):
 # conviene fijar la versión y actualizarla de forma deliberada.
-zensical
+mkdocs build
 
 # Alternativa de respaldo: el mismo mkdocs.yml y los mismos .md construyen
 # con MkDocs Material si hiciera falta volver atrás.
